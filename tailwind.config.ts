@@ -27,7 +27,7 @@ const config = {
       colors: {
         black: {
           DEFAULT: "#000",
-          100: "#000319",
+          100: "#000",
           200: "rgba(17, 25, 40, 0.75)",
           300: "rgba(255, 255, 255, 0.125)"
         },
@@ -37,6 +37,7 @@ const config = {
           200: "#C1C2D3"
         },
         blue: {
+          DEFAULT: "rgb(172 188 249)",
           "100": "#E4ECFF"
         },
         purple: "#CBACF9",
