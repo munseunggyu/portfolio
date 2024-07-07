@@ -14,6 +14,7 @@ export default function About() {
   const email = "mun9927@naver.com";
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
+    alert("이메일 주소가 복사되었습니다.");
   };
 
   return (
