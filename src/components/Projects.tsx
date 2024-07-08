@@ -6,7 +6,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/Card3d";
 import { motion } from "framer-motion";
 import triplusImg from "../../public/project-trplus.png";
 import secretLionImg from "../../public/project-secretLion.png";
-import profileImg from "../../public/portfoilo-profile.jpeg";
+import portfolioImg from "../../public/project-portfolio.png";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -15,10 +15,11 @@ export default function Projects() {
   const initialProjectsData = [
     {
       title: "Portfolio",
-      img: profileImg,
+      img: portfolioImg,
       period: "(2024.07 ~ 2024.07)",
-      intro:
-        "개인 포트폴리오 웹 사이트입니다.\nframer-motion 라이브러리를 활용하여 인터랙티브하고 반응형 애니메이션을 구현",
+      intro: "개인 포트폴리오 웹 사이트입니다.",
+      contents:
+        "1. framer-motion 라이브러리를 활용하여 인터랙티브하고 반응형 애니메이션을 구현\n2. 자동화된 빌드와 배포 프로세스를 위해 GitHub Actions를 사용하여 CI/CD 파이프라인 구축",
       member: "FE 1명",
       contribute: "100",
       skills: "Next.js, Tailwind CSS",
@@ -28,7 +29,7 @@ export default function Projects() {
     {
       title: "triPlus",
       img: triplusImg,
-      period: "(2022.12.09 ~ 2023.01.05)",
+      period: "(2022.12.09 ~ 2023.01.04)",
       intro:
         "triPlus는 다양한 사용자들의 폭넓은 여행 후기 및 자신의 여행 상품을 홍보할 수 있는 SNS서비스입니다.",
       contents:
@@ -93,17 +94,17 @@ export default function Projects() {
                   <CardItem translateZ='100' className='w-full mt-4'>
                     <Image
                       src={project.img}
-                      height='500'
-                      width='1000'
-                      className='w-full object-cover rounded-xl group-hover/card:shadow-xl'
-                      alt='thumbnail'
+                      height={230}
+                      width={390}
+                      className='w-full object-cover rounded-xl group-hover/card:shadow-xl h-[230px]'
+                      alt={`${project.title} thumbnail`}
                     />
                   </CardItem>
 
                   <CardItem
                     as='p'
                     translateZ='30'
-                    className='text-sm max-w-sm mt-4 text-neutral-300 whitespace-pre-wrap'
+                    className='text-sm max-w-sm mt-4 text-neutral-300 whitespace-pre-wrap min-h-[60px]'
                   >
                     {project.intro}
                   </CardItem>
