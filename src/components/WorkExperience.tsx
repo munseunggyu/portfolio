@@ -43,11 +43,11 @@ export default function WorkExperience() {
     }
   ];
   return (
-    <section id='work' className='pt-20 px-8'>
+    <section id='work' className='pt-20 px-8 max-w-5xl mx-auto'>
       <h2 className='text-center text-3xl  font-bold mb-10'>Work Experience</h2>
       <div
         className={cn(
-          "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto"
+          "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto px-2"
         )}
       >
         {data.map((item, idx) => {

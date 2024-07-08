@@ -72,9 +72,12 @@ export default function Projects() {
     setProjects(newProjects);
   };
   return (
-    <section id='projects' className='flex flex-col items-center pt-20'>
+    <section
+      id='projects'
+      className='flex flex-col items-center pt-20 max-w-5xl mx-auto px-8'
+    >
       <h2 className='text-center text-3xl mb-10 font-bold'>Projects</h2>
-      <ul className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+      <ul className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
         {projects.map((project, idx) => {
           return (
             <li key={idx}>
