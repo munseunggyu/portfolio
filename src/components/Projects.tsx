@@ -23,7 +23,8 @@ export default function Projects() {
       member: "FE 1명",
       contribute: "100",
       skills: "Next.js, Tailwind CSS",
-      github: "https://github.com/munseunggyu/Secret-Lion",
+      github: "https://github.com/munseunggyu/portfolio",
+      live: "https://munseunggyu.github.io/portfolio/",
       detail: false
     },
     {
@@ -33,7 +34,7 @@ export default function Projects() {
       intro:
         "triPlus는 다양한 사용자들의 폭넓은 여행 후기 및 자신의 여행 상품을 홍보할 수 있는 SNS서비스입니다.",
       contents:
-        "1. 사용자 경험을 개선하고, 콘텐츠 노출을 극대화하귀 위해 무한 스크롤 구현\n2. 서버에 부하를 줄이기위해 검색 기능에 디바운싱 적용\n3. Custom Hooks를 이용하여 코드의 재사용성 증가\n4. 이미지 스프라이트 기법을 활용하여 자주 변경되지 않는 25개의 이미지를 하나의 이미지로 통합함으로써, 해당 이미지 로딩 시간 약 10배 가량 단축",
+        "1. 사용자 경험을 개선하고, 콘텐츠 노출을 극대화하귀 위해 무한 스크롤 구현\n2. 서버에 부하를 줄이기위해 검색 기능에 디바운싱 적용\n3. Custom Hooks를 이용하여 코드의 재사용성 증가\n4. 이미지 스프라이트 기법을 활용하여 자주 변경되지 않는 25개의 이미지를 하나의 이미지로 통합함으로써, 해당 이미지들의 로딩 시간 약 10배 가량 단축",
       member: "FE 4명",
       contribute: "39",
       skills: "React, Styled-Components",
