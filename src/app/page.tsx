@@ -3,11 +3,13 @@ import SkillCards from "@/components/SkillCards";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import About from "@/components/About";
+import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   const navItems = [
     { name: "About", link: "#about" },
     { name: "Skills", link: "#skills" },
+    { name: "Work Experience", link: "#work" },
     { name: "Projects", link: "#projects" }
   ];
 
@@ -18,6 +20,7 @@ export default function Home() {
         <Intro />
         <About />
         <SkillCards />
+        <WorkExperience />
         <Projects />
       </div>
     </main>
