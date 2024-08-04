@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
+import AiChat from "@/components/AiChat";
 
 export default function Home() {
   const navItems = [
@@ -23,6 +24,7 @@ export default function Home() {
         <WorkExperience />
         <Projects />
       </div>
+      <AiChat />
     </main>
   );
 }

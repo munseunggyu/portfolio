@@ -57,6 +57,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
+      - name: .env setting
+        run: |
+          echo "NEXT_PUBLIC_AI_KEY=${{ secrets.NEXT_PUBLIC_AI_KEY }}" >> .env
+          echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> .env
+
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
@@ -91,6 +96,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
+      - name: .env setting
+        run: |
+          echo "NEXT_PUBLIC_AI_KEY=${{ secrets.NEXT_PUBLIC_AI_KEY }}" >> .env
+          echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> .env
 
       - name: Install dependencies
         run: npm install
