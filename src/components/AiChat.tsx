@@ -207,7 +207,7 @@ export default function Chatbot() {
                     {questionList.map(question => (
                       <li key={question.value}>
                         <button
-                          className={` text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-${question.color}-300 bg-blue-400`}
+                          className={` text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-500  bg-blue-400`}
                           onClick={() => handleChat(question.value, "button")}
                         >
                           {question.value}
