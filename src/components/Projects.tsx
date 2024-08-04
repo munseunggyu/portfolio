@@ -32,9 +32,10 @@ export default function Projects() {
       title: "Portfolio",
       img: portfolioImg,
       period: "(2024.07.07 ~ 2024.07.08)",
-      intro: "개인 포트폴리오 웹 사이트입니다.",
+      intro:
+        "개인 포트폴리오 웹 사이트입니다.\n저에 대한 추가적인 궁금증을 우측 하단 AI 챗봇에게 물어보세요!",
       contents:
-        "1. framer-motion 라이브러리를 활용하여 인터랙티브하고 반응형 애니메이션을 구현\n2. 자동화된 빌드와 배포 프로세스를 위해 GitHub Actions를 사용하여 CI/CD 파이프라인 구축",
+        "1. framer-motion 라이브러리를 활용하여 인터랙티브하고 반응형 애니메이션을 구현\n2. 자동화된 빌드와 배포 프로세스를 위해 GitHub Actions를 사용하여 CI/CD 파이프라인 구축\n3. 간단한 백엔드 서버 구축 후 Gemini를 이용하여 챗봇 기능",
       member: "FE 1명",
       skills: "Next.js, Typescript, Tailwind CSS",
       github: "https://github.com/munseunggyu/portfolio",
