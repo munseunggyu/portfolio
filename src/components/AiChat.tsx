@@ -26,6 +26,7 @@ export default function Chatbot() {
     { value: "MBTI" }
   ];
   const handleChat = async (message: string, type: string) => {
+    if (message.trim().length === 0) return;
     const aiChatCount = localStorage.getItem("count");
     if (!aiChatCount) {
       localStorage.setItem("count", "1");
@@ -187,7 +188,10 @@ export default function Chatbot() {
                     className='flex-1 p-2 border-none outline-none text-black'
                     placeholder='메시지를 입력하세요...'
                   />
-                  <button className='bg-blue-500  px-4 py-2 ml-2 rounded'>
+                  <button
+                    className='bg-blue-500  px-4 py-2 ml-2 rounded disabled:bg-blue-200'
+                    disabled={input.trim().length === 0}
+                  >
                     전송
                   </button>
                 </form>
