@@ -17,7 +17,7 @@ export default function Projects() {
     {
       title: "말모말모",
       img: malmoImg,
-      period: "(2024.07.20 ~ 진행중)",
+      period: "(2024.07.20 ~ 2024.08.13)",
       intro:
         "AI와 사용자의 아이디어를 브레인스토밍으로 발전시켜주는 서비스입니다.",
       contents:
