@@ -52,3 +52,7 @@ export const SKILLS = [
     icon: "/images/skills/recoil.svg",
   },
 ];
+
+export const ENV = {
+  NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || "",
+};
