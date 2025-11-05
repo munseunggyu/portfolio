@@ -1,3 +1,4 @@
+import { ChatbotButton } from "@/components/chatbot";
 import { Navigation } from "@/components/layout";
 import { HeroSection, AboutSection, SkillsSection, ExperienceSection, ProjectsSection } from "@/components/sections";
 
@@ -10,6 +11,7 @@ export default function PortfolioPage() {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
+      <ChatbotButton />
     </div>
   );
 }
