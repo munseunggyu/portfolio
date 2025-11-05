@@ -12,12 +12,7 @@ interface AboutCardProps {
   profileImage: string;
 }
 
-export default function AboutCard({
-  name,
-  email,
-  github,
-  profileImage,
-}: AboutCardProps) {
+export default function AboutCard({ name, email, github, profileImage }: AboutCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -32,13 +27,7 @@ export default function AboutCard({
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Image
-              src={profileImage}
-              alt="Profile"
-              width={192}
-              height={192}
-              className="w-full h-full object-cover"
-            />
+            <Image src={profileImage} alt="Profile" width={192} height={192} className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             className="text-center space-y-3"
@@ -54,17 +43,9 @@ export default function AboutCard({
               <Mail className="w-4 h-4" />
               <span>{email}</span>
             </motion.div>
-            <motion.div
-              className="flex items-center justify-center gap-2 text-white/70"
-              whileHover={{ scale: 1.05 }}
-            >
+            <motion.div className="flex items-center justify-center gap-2 text-white/70" whileHover={{ scale: 1.05 }}>
               <Github className="w-4 h-4" />
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
+              <a href={github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 {github}
               </a>
             </motion.div>

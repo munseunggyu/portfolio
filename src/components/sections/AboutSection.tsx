@@ -10,7 +10,7 @@ export default function AboutSection() {
         name="문승규"
         email="mun9927@naver.com"
         github="https://github.com/munseunggyu"
-        profileImage="/profile_image.webp"
+        profileImage="/images/profile_image.webp"
       />
     </SectionWrapper>
   );

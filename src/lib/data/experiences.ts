@@ -10,8 +10,7 @@ export const experiences: Experience[] = [
     tasks: [
       {
         title: "BATCAMZONE",
-        description:
-          '초음파 카메라("배트캠 / BATCAM") 측정 데이터를 중앙에서 관리하고 분석할 수 있게 해주는 서비스',
+        description: '초음파 카메라("배트캠 / BATCAM") 측정 데이터를 중앙에서 관리하고 분석할 수 있게 해주는 서비스',
         newDevelopments: [
           "한국어, 영어, 일본어, 중국어, 터키어 등 5개 언어를 지원하는 다국어 시스템 구축 및 번역 파일 자동 변환 스크립트 개발",
           "구글지도 및 고덕지도(중국 지도) 라이브러리를 통합 지원하도록 공통 함수 구조 설계 및 구현",
@@ -82,8 +81,7 @@ export const experiences: Experience[] = [
             title: "Vue2 → Vue3 마이그레이션",
             problem:
               "Vue3 마이그레이션 과정에서 기존 커스텀하여 만든 페이지 전환 라이브러리(Vue Page Stack) 호환성 문제 발생 및 stack-key 값이 URL에 노출됨.",
-            cause:
-              "Vue2와 Vue3 문법 변경과 watch 로직이 Page Stack에 쌓인 모든 이전 페이지에서 실행되는 구조 문제.",
+            cause: "Vue2와 Vue3 문법 변경과 watch 로직이 Page Stack에 쌓인 모든 이전 페이지에서 실행되는 구조 문제.",
             solution:
               "Vue3용 Vue Page Stack 커스텀 구현, stack-key를 URL이 아닌 window.history에 저장하고, watch가 deactivate 상태의 컴포넌트에서 실행되지 않도록 수정.",
             result: "Vue3 환경에서 페이지 전환 라이브러리 정상 작동 및 URL 보안성 향상.",
@@ -103,5 +101,4 @@ export const experiences: Experience[] = [
       },
     ],
   },
-  
 ];

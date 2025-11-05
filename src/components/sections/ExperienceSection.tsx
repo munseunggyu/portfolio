@@ -14,12 +14,7 @@ export default function ExperienceSection() {
     <SectionWrapper id="workexperience" title="Work Experience">
       <div className="space-y-8" ref={ref}>
         {experiences.map((experience, index) => (
-          <ExperienceCard
-            key={experience.id}
-            experience={experience}
-            index={index}
-            isInView={isInView}
-          />
+          <ExperienceCard key={experience.id} experience={experience} index={index} isInView={isInView} />
         ))}
       </div>
     </SectionWrapper>

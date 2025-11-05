@@ -27,13 +27,7 @@ export default function SkillCard({ skill }: SkillCardProps) {
           transition={{ type: "spring", stiffness: 300 }}
           className="flex items-center justify-center p-3 bg-white/5 rounded-lg hover:bg-white/10 cursor-pointer"
         >
-          <Image
-            src={skill.icon}
-            alt={skill.name}
-            width={48}
-            height={48}
-            className="w-12 h-12 object-contain"
-          />
+          <Image src={skill.icon} alt={skill.name} width={48} height={48} className="w-12 h-12 object-contain" />
         </motion.div>
       </TooltipTrigger>
       <TooltipContent>

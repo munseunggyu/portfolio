@@ -18,7 +18,6 @@ const container = {
   },
 };
 
-
 export default function SkillsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });

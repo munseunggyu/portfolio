@@ -19,8 +19,8 @@ export const projects: Project[] = [
       team: "기획자 2명, 디자이너 2명, 프론트엔드 3명, 백엔드 2명",
       tech: "Next.js, TypeScript, Tailwind CSS, Tanstack-Query, Zustand",
       links: {
-        github: "https://github.com/munseunggyu/Took-Scan-Client"
-      }
+        github: "https://github.com/munseunggyu/Took-Scan-Client",
+      },
     },
   },
   {
@@ -40,8 +40,8 @@ export const projects: Project[] = [
       tech: "Next.js, TypeScript, Tailwind CSS, Zustand",
       links: {
         github: "https://github.com/munseunggyu/malmo",
-        service: "https://malmo.vercel.app"
-      }
+        service: "https://malmo.vercel.app",
+      },
     },
   },
 ];

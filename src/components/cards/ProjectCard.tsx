@@ -9,7 +9,7 @@ import { useState } from "react";
 import { Project } from "@/lib/types";
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
@@ -43,7 +43,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <p className="text-white/70 min-h-[50px] ">{project.description}</p>
 
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <Button variant="ghost" className="w-full text-white/70 hover:text-white hover:bg-white/10" onClick={handleToggle}>
+            <Button
+              variant="ghost"
+              className="w-full text-white/70 hover:text-white hover:bg-white/10"
+              onClick={handleToggle}
+            >
               {isExpanded ? (
                 <>
                   상세 정보 접기 <ChevronUp className="ml-2 w-4 h-4" />
@@ -92,11 +96,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.details.links.service && (
                   <motion.div className="flex-1" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <a href={project.details.links.service} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="w-full border-white/20 text-white bg-transparent"
-                      >
+                      <Button variant="outline" size="sm" className="w-full border-white/20 text-white bg-transparent">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         서비스 링크
                       </Button>
@@ -105,11 +105,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 )}
                 <motion.div className="flex-1" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <a href={project.details.links.github} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="w-full border-white/20 text-white bg-transparent"
-                    >
+                    <Button variant="outline" size="sm" className="w-full border-white/20 text-white bg-transparent">
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
                     </Button>

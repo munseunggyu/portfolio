@@ -5,8 +5,6 @@ import { SectionWrapper } from "@/components/layout";
 import { ProjectCard } from "@/components/cards";
 import { projects } from "@/lib/data/projects";
 
-
-
 export default function ProjectsSection() {
   return (
     <SectionWrapper id="projects" title="Projects" maxWidth="6xl" className="pb-32">
