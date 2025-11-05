@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "your-google-verification-code", // Google Search Console 인증 코드
+    google: "M-mgQvcObUOgfSPpYlBKFRr7PiwsfxZ6gw77p9DuKFg",
   },
 };
 
