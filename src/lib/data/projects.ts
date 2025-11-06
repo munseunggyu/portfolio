@@ -2,6 +2,28 @@ import type { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    id: "project1",
+    title: "Portfolio",
+    period: "2025.11 - 2025.11",
+    description: "개인 포트폴리오 웹 사이트입니다.\n저에 대한 추가적인 궁금증을 우측 하단 AI 챗봇에게 물어보세요!",
+    thumbnail: "/images/projects/portfolio.png",
+    details: {
+      intro: [
+        "Google Gemini 2.5 Flash-Lite 모델을 활용한 AI 챗봇 기능 구현",
+        "@ai-sdk/react의 useChat 훅으로 실시간 스트리밍 응답 처리",
+        "Supabase를 활용한 사용자 식별(IP + User Agent 해싱) 및 사용량 제한 관리",
+        "Supabase pg_cron을 활용한 일일 사용량 자동 리셋 스케줄러 구현",
+        "대화 로그를 Supabase에 저장하여 방문자 질문 패턴 분석 가능",
+      ],
+      team: "개인 프로젝트",
+      tech: "Next.js, TypeScript, Tailwind CSS, Framer Motion, Supabase",
+      links: {
+        github: "https://github.com/munseunggyu/portfolio",
+        service: "https://portfolio.seunggyu.site",
+      },
+    },
+  },
+  {
     id: "project2",
     title: "툭스캔",
     period: "2025.03 - 2025.09",

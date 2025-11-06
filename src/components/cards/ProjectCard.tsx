@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.title}
           </motion.h3>
           <p className="text-white/60 text-sm">{project.period}</p>
-          <p className="text-white/70 min-h-[50px] ">{project.description}</p>
+          <p className="text-white/70 whitespace-pre-line min-h-[50px] ">{project.description}</p>
 
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Button
@@ -73,7 +73,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <ul className="space-y-2">
                   {project.details.intro.map((item, index) => (
                     <li key={index} className="text-white/70 text-sm leading-relaxed flex gap-2">
-                      <span className="text-white/50 mt-1">•</span>
+                      <span className="text-white/50 ">•</span>
                       <span className="flex-1">{item}</span>
                     </li>
                   ))}
