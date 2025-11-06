@@ -39,3 +39,18 @@ export interface Project {
     };
   };
 }
+
+// Task 8.1: UsageInfo 타입 정의
+export interface UsageInfo {
+  current: number; // 현재 사용량
+  limit: number; // 최대 제한 (3)
+  remaining: number; // 남은 횟수
+  resetAt: string; // 다음 리셋 시간 (ISO 8601)
+}
+
+// Task 8.2: ChatResponse 타입 정의
+export interface ChatResponse {
+  message: string;
+  usage: UsageInfo;
+  error?: string;
+}

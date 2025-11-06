@@ -8,7 +8,7 @@ interface ChatMessageProps {
   content: string;
 }
 
-function ChatMessage({ role, content }: ChatMessageProps) {
+function ChatbotMessage({ role, content }: ChatMessageProps) {
   const isUser = role === "user";
 
   return (
@@ -31,4 +31,4 @@ function ChatMessage({ role, content }: ChatMessageProps) {
   );
 }
 
-export default memo(ChatMessage);
+export default memo(ChatbotMessage);

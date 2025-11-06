@@ -10,7 +10,7 @@ interface ChatInputProps {
   isLoading: boolean;
 }
 
-export function ChatInput({ input, handleInputChange, handleSubmit, isLoading }: ChatInputProps) {
+export default function ChatbotInput({ input, handleInputChange, handleSubmit, isLoading }: ChatInputProps) {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
